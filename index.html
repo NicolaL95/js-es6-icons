@@ -7,6 +7,9 @@
     <title>js-es6-icons</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -17,12 +20,18 @@
             <label class="text_white" for="level">
                 FILTRA PER TIPO
               </label>
-              <select name="level" id="level">
+              <select class="filter" name="level" id="level">
                 <option value="1">All</option>
                 <option value="2">animal</option>
                 <option value="3">vegetable</option>
                 <option value="4">user</option>
               </select>
+              <div class="expand_filter inactive">
+                  <button id="b_1">All</button>
+                  <button id="b_2">animal</button>
+                  <button id="b_3">vegetable</button>
+                  <button id="b_4">user</button>
+              </div>
         </section>
         <section>
             <div class="container">

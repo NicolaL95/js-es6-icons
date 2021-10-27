@@ -1,15 +1,20 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
     }
     
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 h1{
     color: #29B1DD;
     margin: 0;
     font-size: 2.5rem;
+    font-family: 'Architects Daughter', cursive!important;
+    margin-left: 20px;
 }
 
 .bg_azure_flex{
@@ -26,9 +31,38 @@ h1{
     padding: 0 5px 0 0;
 }
 
+.filter{
+    position:relative;
+}
+
+.expand_filter{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: #C6EAF0;
+    padding: 2px 15px;
+    align-items: baseline;
+    border-radius: 5px;
+    transform: translate(87px, 23px);
+    cursor: pointer;
+}
+
+
+
+.inactive{
+    display: none;
+}
+
+.expand_filter button{
+    background-color: #C6EAF0;
+    border: none;
+    cursor: pointer;
+}
+
+
 .container{
 background-color: #DDDDDD;
-height: 100vh;
+height: 900px;
 padding: 15px;
 display: flex;
 flex-direction:column ;
