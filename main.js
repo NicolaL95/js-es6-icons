@@ -97,8 +97,8 @@ icons = [
 	}
 ];
 
-let option = document.querySelector(".filter")
-option = document.addEventListener("click",function(){
+
+document.querySelector(".filter").addEventListener("click",function(){
 	let selOp = document.querySelector(".expand_filter");
 	let rem = document.querySelector(".filter")
 	selOp.classList.remove("inactive")
@@ -145,8 +145,8 @@ createRow(icons)
 
 
 for (let index = 0; index < 4; index++) {
-	let btt = document.getElementById(`b_${index + 1}`)
-	btt.addEventListener("click",function(){	
+	
+	document.getElementById(`b_${index + 1}`).addEventListener("click",function(){	
 	if(this.innerHTML == "All"){
 		createRow(icons)
 	}
