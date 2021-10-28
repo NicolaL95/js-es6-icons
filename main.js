@@ -146,7 +146,7 @@ createRow(icons)
 
 for (let index = 0; index < 4; index++) {
 	let btt = document.getElementById(`b_${index + 1}`)
-	btt.addEventListener("click",function(){
+	btt.addEventListener("click",function(){	
 	if(this.innerHTML == "All"){
 		createRow(icons)
 	}
@@ -167,6 +167,7 @@ for (let index = 0; index < 4; index++) {
 		}
 		});
 		createRow(filtIcons)
+
 	}
 	else if(this.innerHTML == "user"){
 		let filtIcons = [];

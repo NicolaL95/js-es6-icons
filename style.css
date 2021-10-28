@@ -43,11 +43,14 @@ h1{
     padding: 2px 15px;
     align-items: baseline;
     border-radius: 5px;
-    transform: translate(87px, 23px);
+    transform: translate(79px, 21px);
     cursor: pointer;
 }
 
-
+button > i{
+    font-size: 0.6rem;
+    padding-left: 45px;
+}
 
 .inactive{
     display: none;
@@ -87,7 +90,7 @@ flex-direction:column ;
 }
 
 i{
-    font-size: 2.3rem;
+    font-size: 3rem;
     margin-bottom: 1px;
 }
 
@@ -101,4 +104,8 @@ i{
 
 .purple_icon{
     color: #800080 ;
+}
+
+.icon_text{
+   font-size: 1.5rem;
 }
